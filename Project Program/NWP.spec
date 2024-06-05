@@ -1,11 +1,11 @@
 # -*- mode: python ; coding: utf-8 -*-
-
+import sys ; sys.setrecursionlimit(sys.getrecursionlimit() * 2)
 
 block_cipher = None
 
 
 a = Analysis(
-    ['FRDL.py'],
+    ['NWP.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -28,7 +28,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='Deep Learning Fruit Recognition Project',
+    name='Next Word Predictor',
     debug=True,
     icon = 'img.ico',
     bootloader_ignore_signals=False,
